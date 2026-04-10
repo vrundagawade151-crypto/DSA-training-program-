@@ -1,18 +1,24 @@
-
-#generate the code to convert given string into below given output str="aaabbbcccc"
-#a3b3c4
-
-str1="aaabbbcccc"
-output=""
-dict={}
-
-for i in str1:
-    if i in dict:
-        dict[i]=dict[i]+1
-    else:
-        dict[i]=1
-
-for key,value in dict.items():
-    output+=key+str(value)
-print(output)
+def plusMinus(arr):
+    pos_count=0
+    neg_count=0
+    zero_count=0
+    for i in arr:
+        if i>0:
+            pos_count+=1
+        elif i<0:
+            neg_count+=1
+        else:
+            zero_count+=1
+    pos_count=pos_count/n
+    neg_count=neg_count/n
+    zero_count=zero_count/n
+    print(pos_count)
+    print(neg_count)
+    print(zero_count)
     
+        
+
+n = 5
+arr = [-4, 3, -9, 0, 4, 1]
+plusMinus(arr)
+        
